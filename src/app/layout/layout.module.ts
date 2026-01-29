@@ -1,12 +1,9 @@
 import { NgModule } from "@angular/core";
-import { declarations, LayoutRoutingModule } from "./layout.routing";
+import { declarations, LayoutRoutingModule } from "./layout-routing.module";
 
 @NgModule({
-    declarations: [...declarations,],
-    imports: [LayoutRoutingModule],
-    exports:[]
+  declarations: [...declarations],
+  imports: [LayoutRoutingModule],
+  exports: [],
 })
-
-export class LayoutModule{
-
-}
+export class LayoutModule {}
