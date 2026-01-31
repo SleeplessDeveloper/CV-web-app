@@ -1,0 +1,32 @@
+mat-toolbar{
+    background-color: black;
+    height: 80px;
+    .selfie{
+        height: 81px;
+        width: 80px;
+        border-radius: 60px;
+    }
+    .fullname{
+        margin-left: 40px;
+        margin-right: 300px;
+        span{
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+    button{
+        margin-right: 200px;
+        padding:27px;
+        font-size: large;
+        font-weight: bold;
+        border:none;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        background-color: grey;
+        color:darkmagenta
+    }
+}
