@@ -1,0 +1,41 @@
+// Certifications Section
+.certifications-section {
+  background: white;
+
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    .cert-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        transform: translateX(10px);
+      }
+
+      .cert-icon {
+        font-size: 1.5rem;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      &:hover .cert-icon {
+        color: white;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+}
