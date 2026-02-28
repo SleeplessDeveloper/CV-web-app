@@ -1,0 +1,11 @@
+<section class="certifications-section">
+    <div class="section-container">
+      <h2 class="section-title">Professional Development</h2>
+      <div class="certifications-grid">
+        <div class="cert-card" *ngFor="let cert of cvData?.certifications">
+          <div class="cert-icon">✓</div>
+          <p>{{ cert }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

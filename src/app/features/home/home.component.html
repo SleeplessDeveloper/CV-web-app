@@ -56,17 +56,7 @@
  <app-education-history [cvData]="cvData" id="education"></app-education-history>
 
   <!-- Certifications Section -->
-  <section class="certifications-section" id="certifications">
-    <div class="section-container">
-      <h2 class="section-title">Professional Development</h2>
-      <div class="certifications-grid">
-        <div class="cert-card" *ngFor="let cert of cvData.certifications">
-          <div class="cert-icon">✓</div>
-          <p>{{ cert }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-certifications [cvData]="cvData" id="certifications"></app-certifications>
 
   <!-- Contact Section -->
   <app-contact [cvData]="cvData" id="contact"></app-contact>

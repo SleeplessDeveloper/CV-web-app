@@ -8,6 +8,7 @@ import { ExperienceComponent } from '../experience';
 import { ProjectsComponent } from "../projects";
 import { ContactComponent } from "../contact";
 import { EducationHistoryComponent } from '../education-history/education-history.component';
+import { CertificationsComponent } from '../certifications/certifications.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,8 @@ import { EducationHistoryComponent } from '../education-history/education-histor
     ExperienceComponent, 
     ProjectsComponent, 
     ContactComponent,
-    EducationHistoryComponent],
+    EducationHistoryComponent,
+  CertificationsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
