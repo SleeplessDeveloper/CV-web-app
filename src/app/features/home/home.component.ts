@@ -5,11 +5,12 @@ import { CVData } from '../../core/models/cv.model';
 import { AboutComponent } from "../about";
 import { SkillsComponent } from '../skills';
 import { ExperienceComponent } from '../experience';
+import { ProjectsComponent } from "../projects";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, AboutComponent, SkillsComponent, ExperienceComponent],
+  imports: [CommonModule, AboutComponent, SkillsComponent, ExperienceComponent, ProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -50,25 +50,7 @@
  <app-experience [cvData]="cvData" id="experience"></app-experience>
 
   <!-- Projects Section -->
-  <section class="projects-section" id="projects">
-    <div class="section-container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card" *ngFor="let project of cvData.projects">
-          <div class="project-header">
-            <h3>{{ project.name }}</h3>
-            <p class="project-description">{{ project.description }}</p>
-          </div>
-          <div class="project-tech">
-            <span class="tech-badge" *ngFor="let tech of project.technologies">{{ tech }}</span>
-          </div>
-          <ul class="project-highlights">
-            <li *ngFor="let highlight of project.highlights">{{ highlight }}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-projects [cvData]="cvData" id="projects"></app-projects>
 
   <!-- Education Section -->
   <section class="education-section" id="education">

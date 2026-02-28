@@ -1,0 +1,95 @@
+// Projects Section
+.projects-section {
+  background: white;
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+
+    .project-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+
+        &::before {
+          transform: translateX(0);
+        }
+      }
+
+      .project-header {
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.8rem;
+        }
+
+        .project-description {
+          opacity: 0.9;
+          line-height: 1.6;
+        }
+      }
+
+      .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+
+        .tech-badge {
+          background: rgba(255, 255, 255, 0.2);
+          padding: 0.4rem 0.8rem;
+          border-radius: 15px;
+          font-size: 0.85rem;
+          backdrop-filter: blur(10px);
+        }
+      }
+
+      .project-highlights {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+
+        li {
+          padding-left: 1.5rem;
+          margin-bottom: 0.5rem;
+          position: relative;
+          line-height: 1.6;
+
+          &::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
