@@ -81,26 +81,5 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section" id="contact">
-    <div class="section-container">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-content">
-        <p class="contact-intro">I'm always open to discussing new opportunities, projects, or collaborations.</p>
-        <div class="contact-info">
-          <a [href]="'mailto:' + cvData.personalInfo.email" class="contact-item">
-            <span class="contact-icon">📧</span>
-            <span>{{ cvData.personalInfo.email }}</span>
-          </a>
-          <a [href]="'tel:' + cvData.personalInfo.phone" class="contact-item">
-            <span class="contact-icon">📱</span>
-            <span>{{ cvData.personalInfo.phone }}</span>
-          </a>
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <span>{{ cvData.personalInfo.location }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-contact [cvData]="cvData" id="contact"></app-contact>
 </div>

@@ -1,0 +1,50 @@
+// Contact Section
+.contact-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+
+  .section-title {
+    color: white;
+
+    &::after {
+      background: white;
+    }
+  }
+
+  .contact-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .contact-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(10px);
+      }
+
+      .contact-icon {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
