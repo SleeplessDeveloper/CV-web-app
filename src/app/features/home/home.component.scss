@@ -143,54 +143,6 @@
   }
 }
 
-// Education Section
-.education-section {
-  background: #f8f9fa;
-
-  .education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-
-    .education-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-
-      &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      }
-
-      .education-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-        color: #333;
-        margin-bottom: 1rem;
-        line-height: 1.4;
-      }
-
-      .institution {
-        color: #667eea;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-      }
-
-      .date {
-        color: #999;
-        font-size: 0.9rem;
-      }
-    }
-  }
-}
-
 // Certifications Section
 .certifications-section {
   background: white;

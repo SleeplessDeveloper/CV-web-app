@@ -7,11 +7,18 @@ import { SkillsComponent } from '../skills';
 import { ExperienceComponent } from '../experience';
 import { ProjectsComponent } from "../projects";
 import { ContactComponent } from "../contact";
+import { EducationHistoryComponent } from '../education-history/education-history.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, AboutComponent, SkillsComponent, ExperienceComponent, ProjectsComponent, ContactComponent],
+  imports: [CommonModule, 
+    AboutComponent, 
+    SkillsComponent, 
+    ExperienceComponent, 
+    ProjectsComponent, 
+    ContactComponent,
+    EducationHistoryComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

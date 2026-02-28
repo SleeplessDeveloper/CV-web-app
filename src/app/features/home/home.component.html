@@ -53,19 +53,7 @@
   <app-projects [cvData]="cvData" id="projects"></app-projects>
 
   <!-- Education Section -->
-  <section class="education-section" id="education">
-    <div class="section-container">
-      <h2 class="section-title">Education</h2>
-      <div class="education-grid">
-        <div class="education-card" *ngFor="let edu of cvData.education">
-          <div class="education-icon">🎓</div>
-          <h3>{{ edu.degree }}</h3>
-          <p class="institution">{{ edu.institution }}</p>
-          <p class="date">{{ edu.date }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+ <app-education-history [cvData]="cvData" id="education"></app-education-history>
 
   <!-- Certifications Section -->
   <section class="certifications-section" id="certifications">
