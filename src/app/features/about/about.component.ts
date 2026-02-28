@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CVData } from '../../core/models/cv.model';
 
 @Component({
   selector: 'app-about',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  @Input() cvData: CVData | null = null;
+  
 
 }

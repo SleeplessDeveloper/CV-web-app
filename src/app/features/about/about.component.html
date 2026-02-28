@@ -1,1 +1,22 @@
-<p>about works!</p>
+<section class="about-section">
+  <div class="section-container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p class="about-text">{{ cvData?.summary }}</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">{{ cvData?.experience?.length }}+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ cvData?.projects?.length }}+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ cvData?.certifications?.length }}+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

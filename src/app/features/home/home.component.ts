@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CvDataService } from '../../core/services/cv-data.service';
 import { CVData } from '../../core/models/cv.model';
+import { AboutComponent } from "../about";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AboutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
