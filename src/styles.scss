@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('./section.scss');
+@import url('./styles/section.scss');
+@import url('./styles/mobile-responsiveness.scss');
+@import url('./styles/animations.scss');
 * {
   margin: 0;
   padding: 0;
