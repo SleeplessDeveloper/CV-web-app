@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { CvDataService } from '../../core/services/cv-data.service';
 import { CVData } from '../../core/models/cv.model';
 import { AboutComponent } from "../about";
+import { SkillsComponent } from '../skills';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, AboutComponent],
+  imports: [CommonModule, AboutComponent, SkillsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
