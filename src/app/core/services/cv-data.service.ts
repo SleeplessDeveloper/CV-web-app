@@ -12,8 +12,8 @@ export class CvDataService {
       location: 'Centurion, Gauteng',
       phone: '+27 76 788 1556',
       email: 'siphefanasibanyoni@gmail.com',
-      linkedin: 'https://linkedin.com/in/siphephelo-sibanyoni',
-      github: 'https://github.com/siphephelo-sibanyoni',
+      linkedin: 'https://www.linkedin.com/in/siphephelo-sibanyoni-b89a43298',
+      github: 'https://github.com/SleeplessDeveloper',
       image: 'images/Me 2.jpg'
     },
     summary: 'Results-oriented Software Development Engineer with demonstrated expertise in full-stack development using Angular, C#, TypeScript, .NET Core, and PostgreSQL. Adept at rapidly acquiring new technologies and implementing agile methodologies to deliver scalable, high-quality software solutions.',

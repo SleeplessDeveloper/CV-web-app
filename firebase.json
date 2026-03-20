@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/cv-web-app/browser",
+    "site": "cv-web-app-35d1f",
+     "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
