@@ -71,6 +71,9 @@ export class HomeComponent implements OnInit {
   }
 
   downloadCV() {
-    window.print();
+    const link = document.createElement('a');
+    link.href = 'pdf/SIPHEPHELO SIBANYONI CV 2025.pdf';
+    link.download = 'Siphephelo_Sibanyoni_CV_2025.pdf';
+    link.click();
   }
 }
