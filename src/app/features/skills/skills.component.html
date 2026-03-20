@@ -1,1 +1,43 @@
-<p>skills works!</p>
+<section class="skills-section">
+    <div class="section-container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.languages">{{ skill }}</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.frameworks">{{ skill }}</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.databases">{{ skill }}</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.devOps">{{ skill }}</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Methodologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.methodologies">{{ skill }}</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Web Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" *ngFor="let skill of cvData?.skills?.webTech">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

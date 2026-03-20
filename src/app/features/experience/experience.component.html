@@ -1,1 +1,25 @@
-<p>experience works!</p>
+ <section class="experience-section">
+    <div class="section-container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let exp of cvData?.experience; let i = index">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <h3>{{ exp.title }}</h3>
+              <span class="company">{{ exp.company }}</span>
+              <span class="period">{{ exp.period }}</span>
+            </div>
+            <div class="responsibilities">
+              <div class="responsibility-group" *ngFor="let resp of exp.responsibilities">
+                <h4>{{ resp.category }}</h4>
+                <ul>
+                  <li *ngFor="let item of resp.items">{{ item }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

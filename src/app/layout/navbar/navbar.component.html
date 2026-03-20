@@ -1,0 +1,24 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="navbar-container">
+    <div class="navbar-brand" (click)="scrollToSection('home')">
+      <img [src]="img" class="selfie" alt="Profile">
+      <span class="brand-name">Siphephelo Sibanyoni</span>
+    </div>
+    
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-menu" [class.active]="isMobileMenuOpen">
+      <button class="nav-link" (click)="scrollToSection('about')">About</button>
+      <button class="nav-link" (click)="scrollToSection('skills')">Skills</button>
+      <button class="nav-link" (click)="scrollToSection('experience')">Experience</button>
+      <button class="nav-link" (click)="scrollToSection('projects')">Projects</button>
+      <button class="nav-link" (click)="scrollToSection('education')">Education</button>
+      <button class="nav-link" (click)="scrollToSection('certifications')">Certifications</button>
+      <button class="nav-link" (click)="scrollToSection('contact')">Contact</button>
+    </div>
+  </div>
+</nav>

@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./styles/section.scss');
+@import url('./styles/mobile-responsiveness.scss');
+@import url('./styles/animations.scss');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html, body { 
+  height: 100%; 
+  overflow-x: hidden;
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Print styles for CV download */
+@media print {
+  .navbar,
+  .scroll-indicator,
+  .hero-buttons,
+  .social-links {
+    display: none !important;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 2rem;
+    page-break-after: always;
+  }
+
+  .section-container {
+    padding: 1rem;
+  }
+
+  body {
+    background: white;
+  }
+}

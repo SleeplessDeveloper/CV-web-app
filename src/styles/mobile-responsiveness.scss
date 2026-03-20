@@ -1,0 +1,81 @@
+// Mobile Responsiveness
+@media (max-width: 768px) {
+  .hero-section {
+    .hero-name {
+      font-size: 2.5rem;
+    }
+
+    .hero-title {
+      font-size: 1.3rem;
+    }
+
+    .hero-image img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+
+    .timeline-item {
+      padding-left: 1.5rem;
+
+      .timeline-marker {
+        left: -1.9rem;
+      }
+
+      .timeline-content:hover {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    .hero-name {
+      font-size: 2rem;
+    }
+
+    .hero-title {
+      font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .certifications-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
