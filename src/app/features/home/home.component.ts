@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CvDataService } from '../../core/services/cv-data.service';
 import { CVData } from '../../core/models/cv.model';
+import { CV_PDF_DOWNLOAD_NAME, CV_PDF_PATH } from '../../core/constants/cv-assets';
 import { AboutComponent } from "../about";
 import { SkillsComponent } from '../skills';
 import { ExperienceComponent } from '../experience';
@@ -27,7 +28,12 @@ import { CertificationsComponent } from '../certifications/certifications.compon
 export class HomeComponent implements OnInit {
   cvData!: CVData;
   currentRole = '';
-  roles = ['Full-Stack Developer', 'Angular Specialist', 'Backend Engineer', '.NET Developer'];
+  roles = [
+    'Full-Stack Developer',
+    'Angular & React Developer',
+    '.NET & Spring Boot Engineer',
+    'Agentic AI Developer'
+  ];
   roleIndex = 0;
 
   constructor(private cvDataService: CvDataService) {}
@@ -72,8 +78,13 @@ export class HomeComponent implements OnInit {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = 'pdf/SIPHEPHELO SIBANYONI CV 2025.pdf';
-    link.download = 'Siphephelo_Sibanyoni_CV_2025.pdf';
+    link.href = CV_PDF_PATH;
+    link.download = CV_PDF_DOWNLOAD_NAME;
+    // The anchor must be in the document for a programmatic click to honour
+    // `download` in Firefox; Chromium and Edge work either way. Without this the
+    // main call-to-action silently does nothing for a share of visitors.
+    document.body.appendChild(link);
     link.click();
+    link.remove();
   }
 }

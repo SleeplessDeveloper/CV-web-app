@@ -12,7 +12,7 @@
             </div>
             <div class="responsibilities">
               <div class="responsibility-group" *ngFor="let resp of exp.responsibilities">
-                <h4>{{ resp.category }}</h4>
+                <h4 *ngIf="resp.category">{{ resp.category }}</h4>
                 <ul>
                   <li *ngFor="let item of resp.items">{{ item }}</li>
                 </ul>
