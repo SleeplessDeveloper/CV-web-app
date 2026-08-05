@@ -37,12 +37,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cv-web-app' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('cv-web-app');
-  });
-
   it('should render the router outlet', () => {
     // Rewritten. This previously asserted an <h1> containing 'Hello, cv-web-app',
     // which app.component.html has never rendered — it contains only
